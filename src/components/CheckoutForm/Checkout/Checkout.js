@@ -9,7 +9,6 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Divider from '@mui/material/Divider';
 import Button from '@mui/material/Button';
 import { Link, useNavigate } from 'react-router-dom';
-
 import { commerce } from '../../../lib/commerce';
 import AddressForm from '../AddressForm';
 import PaymentForm from '../PaymentForm';
@@ -74,7 +73,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
         <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
       </>
     );
-  }
+  };
 
   const Form = () => (activeStep === 0
     ? <AddressForm checkoutToken={checkoutToken} nextStep={nextStep} setShippingData={setShippingData} test={test} />

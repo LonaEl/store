@@ -1,15 +1,15 @@
 import { makeStyles, fade } from 'tss-react/mui';
 
-const drawerWidth = 0;
+ const drawerWidth = 0; 
 
 const useStyles = makeStyles() ((theme) => ({
   appBar: {
     boxShadow: 'none',
     borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
-    [theme.breakpoints.up('sm')]: {
+     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
-    },
+    }, 
   },
   title: {
     flexGrow: 1,
@@ -29,7 +29,7 @@ const useStyles = makeStyles() ((theme) => ({
   grow: {
     flexGrow: 1,
   },
-  search: {
+/*   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
     backgroundColor: fade(theme.palette.common.white, 0.15),
@@ -42,7 +42,7 @@ const useStyles = makeStyles() ((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: 'auto',
     },
-  },
+  }, */
   searchIcon: {
     padding: theme.spacing(0, 2),
     height: '100%',
